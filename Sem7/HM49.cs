@@ -38,6 +38,7 @@ namespace Sem7
                 TwoMas.PrintMass(mass);
                 string[,] stroki = CopyString(mass, colums, row);
                 Console.WriteLine();
+                Console.WriteLine("* -- остались без изменений:");
                 TwoMas.PrintMassString(stroki);
             }
             else
@@ -47,6 +48,7 @@ namespace Sem7
                 TwoMas.PrintMass(mass);
                 string[,] stroki = CopyStrDuos(mass, colums, row);
                 Console.WriteLine();
+                Console.WriteLine("* -- остались без изменений:");
                 TwoMas.PrintMassString(stroki);
             }
             
