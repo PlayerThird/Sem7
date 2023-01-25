@@ -22,6 +22,17 @@ namespace Sem7
                 Console.WriteLine();
             }
         }
+        public static void PrintMassDouble(double[,] array)
+        {
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    Console.Write($"{array[i, j]:f2} ");
+                }
+                Console.WriteLine();
+            }
+        }
         public static int[,] FillArray(int[,] array)
         {
             for (int i = 0; i < array.GetLength(0); i++)
@@ -29,6 +40,18 @@ namespace Sem7
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
                     array[i, j] = new Random().Next(1, 10);
+                }
+                Console.WriteLine();
+            }
+            return array;
+        }
+        public static double[,] FillArrayDouble(double[,] array, int minValue, int maxValue)
+        {
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] = new Random().NextDouble() * (maxValue - minValue) + minValue;
                 }
                 Console.WriteLine();
             }

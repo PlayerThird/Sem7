@@ -14,6 +14,29 @@ namespace Sem7
         {
             //new Random().NextDouble()
             //new Random().NextDouble() * (maxValue - minValue) + minValue;
+            Console.Clear();
+
+            Console.Write("Введите количество строк массива: ");
+            int rows = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите количество столбцов массива: ");
+            int columns = int.Parse(Console.ReadLine());
+
+            double[,] array = GetArray(rows, columns, -10, 10);
+            TwoMas.PrintMassDouble(array);
+
+            double[,] GetArray(int m, int n, double minValue, double maxValue)
+            {
+                double[,] result = new double[m, n];
+                for (int i = 0; i < m; i++)
+                {
+                    for (int j = 0; j < n; j++)
+                    {
+                        result[i, j] = new Random().NextDouble() * (maxValue - minValue) + minValue;
+                    }
+                }
+                return result;
+            }
         }
     }
 }

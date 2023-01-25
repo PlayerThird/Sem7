@@ -6,7 +6,7 @@ namespace Sem7
     {
         internal static void Start()
         {
-            Console.WriteLine("Task 46 = dont work" +
+            Console.WriteLine("Task 46 = work" +
                 "\r\nTask 47 (HM)= dont work" +
                 "\r\nTask 48 = dont work" +
                 "\r\nTask 49 = dont work" +

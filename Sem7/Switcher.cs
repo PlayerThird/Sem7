@@ -6,10 +6,18 @@ namespace Sem7
     {
         internal static void Start()
         {
-            int y = Checker.CheckInput<int>(x => x < 47 || x > 52, "Введите номер программы: ", "Такой программы нет");
+            int y = Checker.CheckInput<int>(x => x < 46 || x > 52, "Введите номер программы: ", "Такой программы нет");
             bool check = false;
             switch (y)
             {
+                case 46:
+                    DiscriptionTasks(y);
+                    check = UnlockTasks();
+                    CheckContinue(check);
+                    Console.Clear();
+                    DiscriptionTasks(y);
+                    HM46.Start();
+                    break;
                 case 47:
                     DiscriptionTasks(y);
                     check = UnlockTasks();
