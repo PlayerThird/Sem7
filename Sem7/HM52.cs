@@ -16,7 +16,25 @@ namespace Sem7
     {
         internal static void Start()
         {
-            throw new NotImplementedException();
+            
+            int[,] masiv = TwoMas.CreateArray();
+            Arifmet(masiv);
+
+
+            void Arifmet(int[,] array)
+            {
+                int[] result = new int[array.GetLength(0)];
+                for (int i = 0; i < array.GetLength(0); i++)
+                {
+                    for (int j = 0; j < array.GetLength(1); j++)
+                    {
+                        result[i]+= array[i,j];
+                        
+                    }
+                    Console.WriteLine($"Sum {i + 1} - > {result[i]}");
+                }
+                
+            }
         }
     }
 }

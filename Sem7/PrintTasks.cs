@@ -10,8 +10,8 @@ namespace Sem7
                 "\r\nTask 47 (HM)= work" +
                 "\r\nTask 48 = work" +
                 "\r\nTask 49 = work" +
-                "\r\nTask 50 (HM) = dont work" +
-                "\r\nTask 51 = dont work" +
+                "\r\nTask 50 (HM) = work" +
+                "\r\nTask 51 = work" +
                 "\r\nTask 52 (HM) = dont work");
             Console.ReadLine();
         }

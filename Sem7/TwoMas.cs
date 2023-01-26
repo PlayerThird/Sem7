@@ -10,7 +10,17 @@ namespace Sem7
     {
 
 
-
+        public static int[,] CreateArray()
+        {
+            Console.WriteLine("Введите кол-во строк");
+            int colums = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите кол-во столбцов");
+            int row = Convert.ToInt32(Console.ReadLine());
+            int[,] mass = new int[colums, row];
+            mass = TwoMas.FillArray(mass);
+            TwoMas.PrintMass(mass);
+            return mass;
+        }
         public static void PrintMass(int[,] array)
         {
             for (int i = 0; i < array.GetLength(0); i++)
