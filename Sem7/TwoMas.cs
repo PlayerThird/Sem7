@@ -21,6 +21,17 @@ namespace Sem7
             TwoMas.PrintMass(mass);
             return mass;
         }
+        public static double[,] CreateArrayDouble()
+        {
+            Console.WriteLine("Введите кол-во строк");
+            int colums = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите кол-во столбцов");
+            int row = Convert.ToInt32(Console.ReadLine());
+            double[,] mass = new double[colums, row];
+            mass = TwoMas.FillArrayDouble(mass,1,10);
+            TwoMas.PrintMassDouble(mass);
+            return mass;
+        }
         public static void PrintMass(int[,] array)
         {
             for (int i = 0; i < array.GetLength(0); i++)
